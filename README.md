@@ -14,8 +14,24 @@ I do not have a GPU, so I only tried some small size of game board (5\*5, 7\*7, 
 
 ## Results
 
-### 5\*5
+### Videos 
 
-![Play GIF](./5_5/play.gif) 
+|Board Size| 5\*5     | 7\*7     | 10\*10 |
+| ------:|: ------------- |:-------------:| -----------:|
+|Video | ![Play GIF](./5_5/play.gif)| ![Play GIF](./7_7/play.gif) | ![Play GIF](./10_10/play.gif) |
+|Games played| 
+
+### Score plots
+
+(MA(50) = Moving average 50)
+
+(Also see *analyze_all.ipynb*)
+![Score plot](./5_5/plot50.png)
+![Score plot](./7_7/plot50.png)
+![Score plot](./10_10/plot50.png)
+
+Comparison:
+![Score plot](./plot50.png)
+
 
 (To be continued...)

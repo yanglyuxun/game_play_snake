@@ -14,9 +14,9 @@ from numpy import random
 import numpy as np
 import pygame,os
 
-rows, cols = 5,5
+rows, cols = 10,10
 fps = 4
-frame = fps*60
+frame = fps*60*3
 save_dir = './%i_%i/'%(rows, cols)
 
 with open(save_dir+'mem.pickle','rb') as f:
