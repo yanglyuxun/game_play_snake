@@ -14,4 +14,6 @@ I do not have a GPU, so I only tried some small size of game board (5\*5, 7\*7, 
 
 ### 5\*5
 
+![Play GIF](./5_5/play.gif) 
+
 (To be continued...)
