@@ -15,8 +15,8 @@ import numpy as np
 import pygame,os
 
 rows, cols = 5,5
-frame = 200
-fps = 3
+fps = 4
+frame = fps*60
 save_dir = './%i_%i/'%(rows, cols)
 
 with open(save_dir+'mem.pickle','rb') as f:

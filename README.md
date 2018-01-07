@@ -10,6 +10,8 @@ I do not have a GPU, so I only tried some small size of game board (5\*5, 7\*7, 
 
 "main_train.py" is the file to run. It will use "snake_game.py", which is the simulation of the snake game. "train{m}_{n}.py" stores the hyper-parameters and the model structure for the {m}\*{n} size of game board. Each size's experiment result is stored in a corresponding folder. Each folder has a Jupyter notebook to see the score results.
 
+"make_gif.py" is the codes to make the gif images.
+
 ## Results
 
 ### 5\*5
