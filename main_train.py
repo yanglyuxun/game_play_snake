@@ -35,6 +35,7 @@ else:####### if you continue to run:
         (t,epsilon,mem,scores)=pickle.load(f)
     from keras.models import load_model
     model = load_model(save_dir+'model.h5')
+    #epsilon = INITIAL_EPSILON # use this line when you want to enlarge the old epsilon
 from keras import backend as K
 print('lr0:',K.get_value(model.optimizer.lr))
 K.set_value(model.optimizer.lr, 0.0001) # used to adjust lr
