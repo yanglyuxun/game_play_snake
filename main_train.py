@@ -35,9 +35,10 @@ else:####### if you continue to run:
         (t,epsilon,mem,scores)=pickle.load(f)
     from keras.models import load_model
     model = load_model(save_dir+'model.h5')
-    print('lr0:',K.get_value(model.optimizer.lr))
-    K.set_value(model.optimizer.lr, 0.0001) # used to adjust lr
-    print('lr1:',K.get_value(model.optimizer.lr))
+from keras import backend as K
+print('lr0:',K.get_value(model.optimizer.lr))
+K.set_value(model.optimizer.lr, 0.0001) # used to adjust lr
+print('lr1:',K.get_value(model.optimizer.lr))
 ##################################
 
 ## log file
@@ -90,10 +91,12 @@ while True: # start to loop
         mem.append((inp,a_t,None,-1000))
         scores.append(g.score) # save the score
         snake1, fruit1, wrongd1 = g.first() # start a new game
+        if SHOW: pyg.show(snake1, fruit1)
     elif result == 'w': # win
         mem.append((inp,a_t,None,2000))
         scores.append(g.score) # save the score
         snake1, fruit1, wrongd1 = g.first() # start a new game
+        if SHOW: pyg.show(snake1, fruit1)
     else:
         raise 'wrong'
     snake, fruit, wrongd = snake1, fruit1, wrongd1 #update
