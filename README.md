@@ -27,12 +27,22 @@ I do not have a GPU, so I only tried some small size of game board (5\*5, 7\*7, 
 (MA(50) = Moving average 50)
 
 (Also see *analyze_all.ipynb*)
+
 ![Score plot](./5_5/plot50.png)
+
 ![Score plot](./7_7/plot50.png)
+
 ![Score plot](./10_10/plot50.png)
 
+
 Comparison:
+
 ![Score plot](./plot50.png)
 
+### About 15\*15 and 20\*20
+
+I also tried some experiments on 15\*15 and 20\*20 board sizes. But when the board size is such big, it is very tough for the program to find the rules in the beginning exploration. In limited time to let it to random walk, it hardly eat any fruit. (In my experiments, the max score is only 4 and 2.) So the positive reward samples are too few at the beginning, and it cannot learn any thing without those samples. Given more exploration time, it may work in bigger board sizes.
+
+## Analysis
 
 (To be continued...)
