@@ -19,7 +19,8 @@ I do not have a GPU, so I only tried some small size of game board (5\*5, 7\*7, 
 |Board Size      | 5\*5                       | 7\*7                        | 10\*10                        |
 | -------------- | -------------------------- | --------------------------- | ----------------------------- |
 |Video           | ![Play GIF](./5_5/play.gif)| ![Play GIF](./7_7/play.gif) | ![Play GIF](./10_10/play.gif) |
-|Games played    |                            |                             |                               |
+|Games played    |  17655     |   10638         |        8553    |
+|Max Score | 19 | 19| 24|
 
 ### Score plots
 
