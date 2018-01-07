@@ -13,7 +13,7 @@ from keras.initializers import TruncatedNormal
 from keras.layers import Input, Embedding, Dense, Dropout, Flatten, Conv2D, MaxPooling2D
 
 
-SHOW = True # Show the game
+SHOW = False # Show the game
 
 
 rows = 5
