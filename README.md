@@ -6,6 +6,8 @@ A deep neural network is used to fit the Q function in Q learning. The inputs ar
 
 I do not have a GPU, so I only tried some small sizes of game board. In theory, this should work in any size, but a larger size may need more training and playing (for the program to see more states of the game and learn).
 
+Another reinforcement learning experiment for Wechat Jump Game is at: https://github.com/yanglyuxun/game_play_jump
+
 ## Files
 
 "main_train.py" is the file to run. It will use "snake_game.py", which is the simulation of the snake game. "train{m}_{n}.py" stores the hyper-parameters and the model structure for the {m}\*{n} size of game board. Each size's experiment result is stored in a corresponding folder. Each folder has a Jupyter notebook to see the score results.
