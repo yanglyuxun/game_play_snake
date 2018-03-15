@@ -22,15 +22,14 @@ from snake_game import snake_API, snack_pygame
 if not os.path.exists(save_dir):
     os.mkdir(save_dir)
 
-####### if you run at the first time:
-if not os.path.exists(save_dir+'model.h5'):
+if not os.path.exists(save_dir+'model.h5'): ####### if you run at the first time
     model = buildmodel(True)
     mem = deque(maxlen = REPLAY_MEMORY) # store the memories
     records = deque(maxlen = REPLAY_MEMORY) # only record numbers
     epsilon = INITIAL_EPSILON
     t=0
     scores = []
-else:####### if you continue to run:
+else:####### if you continue to run
     with open(save_dir+'mem.pickle','rb') as f:
         (t,epsilon,mem,scores)=pickle.load(f)
     from keras.models import load_model
